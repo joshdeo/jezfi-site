@@ -1,0 +1,59 @@
+<section class="page-hero">
+  <div class="layer" data-speed="0.2"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:#f0cf84">Learn</span>
+    <h1>Taxes, explained.<br><em style="font-style:italic;font-weight:600;color:#f0cf84">News, every morning.</em></h1>
+    <p class="lede" style="max-width:64ch">New to taxes, or just tired of the jargon? Start with today's article, browse trusted CRA guides, and flip through plain language definitions of the terms everyone assumes you know.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn btn-gold" href="#news">Today's briefing</a><a class="btn btn-ghost" href="#resources">Resource library</a><a class="btn btn-ghost" href="#glossary">Tax terms</a></div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="news-head reveal">
+      <div><span class="eyebrow">Daily briefing</span><h2 style="margin:0">Canadian tax news</h2>
+        <p class="lede" style="margin:10px 0 0">A new article from across Canada every morning at 8:00 am Eastern. The newest story leads, older ones step aside, and everything lands in the archive.</p></div>
+      <div class="live"><i></i><span id="nextUpdate">Next article at 8:00 am ET</span></div>
+    </div>
+    <div class="news-grid" id="newsGrid" data-limit="6" aria-live="polite"></div>
+    <div class="center" style="margin-top:30px"><button class="btn btn-primary" id="archiveToggle" type="button" aria-expanded="false" aria-controls="archive">Read more from the archive</button></div>
+
+    <div class="archive" id="archive" hidden>
+      <div class="archive-bar">
+        <h3>News archive</h3>
+        <div class="tools-row">
+          <div class="search">{{icon:search}}<input class="input" id="archiveSearch" type="search" placeholder="Search tax news" aria-label="Search the archive"></div>
+        </div>
+      </div>
+      <div class="filters" id="archiveFilters" role="group" aria-label="Filter by topic"></div>
+      <ul class="a-list" id="archiveList"></ul>
+      <div class="a-foot"><span id="archiveCount" style="color:var(--muted);font-size:.9rem"></span><button class="btn btn-ghost btn-sm" id="archiveMore" type="button" style="color:var(--blue)">Show more</button></div>
+    </div>
+    <p style="font-size:.84rem;color:var(--muted);margin-top:18px">Headlines link to their original publishers. Summaries are written by us and are general information, not tax advice.</p>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="section" id="resources" style="background:#fff;border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="reveal"><span class="eyebrow">Resource library</span><h2>Trusted guides, hand picked</h2>
+      <p class="lede">Straight from the Canada Revenue Agency, Service Canada and the Province of Ontario. Each link opens the official page in a new tab.</p></div>
+    {{resources}}
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section class="section" id="glossary">
+  <div class="container">
+    <div class="reveal"><span class="eyebrow">Tax terms, explained</span><h2>The jargon, without the headache</h2>
+      <p class="lede">Tap a card to flip it. Twelve terms that come up every tax season, in plain language.</p></div>
+    <div class="grid g4" id="gloss" style="margin-top:36px"></div>
+  </div>
+</section>
+
+<section class="band section" style="padding:clamp(54px,7vw,90px) 0">
+  <div class="layer" data-speed="0.15"></div>
+  <div class="container center reveal"><h2 style="color:#fff">Still have questions?</h2><p style="color:#cdd8f6;font-size:1.1rem;max-width:56ch;margin-inline:auto">That is what we are here for. Tell us what is on your mind and a real person will answer within one business day.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center"><a class="btn btn-gold" href="contact.html#intake">Start your intake {{icon:arrow}}</a><a class="btn btn-ghost" style="color:#fff" href="tools.html">Try the calculators</a></div></div>
+</section>

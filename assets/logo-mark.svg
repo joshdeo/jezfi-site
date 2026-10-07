@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="JEZFI Associates mark">
+  <defs>
+    <clipPath id="globe"><circle cx="120" cy="120" r="43"/></clipPath>
+    <radialGradient id="ocean" cx="38%" cy="32%" r="80%">
+      <stop offset="0" stop-color="#5d8df0"/><stop offset="0.45" stop-color="#1f4fc4"/><stop offset="1" stop-color="#0b2a6b"/>
+    </radialGradient>
+  </defs>
+  <!-- diamond frame -->
+  <path d="M120,8 L232,120 L120,232 L8,120 Z" fill="none" stroke="#0b2a6b" stroke-width="5" stroke-linejoin="miter"/>
+  <path d="M120,3 L237,120 L120,237 L3,120 Z" fill="none" stroke="#0b2a6b" stroke-width="1.6" opacity=".5"/>
+  <!-- greek key bands on the four sides -->
+  <g fill="none" stroke="#0b2a6b" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="miter">
+    <g transform="translate(120 120) rotate(45) translate(0 -68)"><path d="M-41.14,17.60 L-41.14,0.00 L-23.54,0.00 L-23.54,13.20 L-36.74,13.20 L-36.74,4.40 L-27.94,4.40 L-27.94,8.80 M-1.98,17.60 L-1.98,0.00 L-19.58,0.00 L-19.58,13.20 L-6.38,13.20 L-6.38,4.40 L-15.18,4.40 L-15.18,8.80 M1.98,17.60 L1.98,0.00 L19.58,0.00 L19.58,13.20 L6.38,13.20 L6.38,4.40 L15.18,4.40 L15.18,8.80 M41.14,17.60 L41.14,0.00 L23.54,0.00 L23.54,13.20 L36.74,13.20 L36.74,4.40 L27.94,4.40 L27.94,8.80" transform="translate(0 0)" /></g><g transform="translate(120 120) rotate(135) translate(0 -68)"><path d="M-41.14,17.60 L-41.14,0.00 L-23.54,0.00 L-23.54,13.20 L-36.74,13.20 L-36.74,4.40 L-27.94,4.40 L-27.94,8.80 M-1.98,17.60 L-1.98,0.00 L-19.58,0.00 L-19.58,13.20 L-6.38,13.20 L-6.38,4.40 L-15.18,4.40 L-15.18,8.80 M1.98,17.60 L1.98,0.00 L19.58,0.00 L19.58,13.20 L6.38,13.20 L6.38,4.40 L15.18,4.40 L15.18,8.80 M41.14,17.60 L41.14,0.00 L23.54,0.00 L23.54,13.20 L36.74,13.20 L36.74,4.40 L27.94,4.40 L27.94,8.80" transform="translate(0 0)" /></g><g transform="translate(120 120) rotate(225) translate(0 -68)"><path d="M-41.14,17.60 L-41.14,0.00 L-23.54,0.00 L-23.54,13.20 L-36.74,13.20 L-36.74,4.40 L-27.94,4.40 L-27.94,8.80 M-1.98,17.60 L-1.98,0.00 L-19.58,0.00 L-19.58,13.20 L-6.38,13.20 L-6.38,4.40 L-15.18,4.40 L-15.18,8.80 M1.98,17.60 L1.98,0.00 L19.58,0.00 L19.58,13.20 L6.38,13.20 L6.38,4.40 L15.18,4.40 L15.18,8.80 M41.14,17.60 L41.14,0.00 L23.54,0.00 L23.54,13.20 L36.74,13.20 L36.74,4.40 L27.94,4.40 L27.94,8.80" transform="translate(0 0)" /></g><g transform="translate(120 120) rotate(315) translate(0 -68)"><path d="M-41.14,17.60 L-41.14,0.00 L-23.54,0.00 L-23.54,13.20 L-36.74,13.20 L-36.74,4.40 L-27.94,4.40 L-27.94,8.80 M-1.98,17.60 L-1.98,0.00 L-19.58,0.00 L-19.58,13.20 L-6.38,13.20 L-6.38,4.40 L-15.18,4.40 L-15.18,8.80 M1.98,17.60 L1.98,0.00 L19.58,0.00 L19.58,13.20 L6.38,13.20 L6.38,4.40 L15.18,4.40 L15.18,8.80 M41.14,17.60 L41.14,0.00 L23.54,0.00 L23.54,13.20 L36.74,13.20 L36.74,4.40 L27.94,4.40 L27.94,8.80" transform="translate(0 0)" /></g>
+  </g>
+  <!-- globe -->
+  <circle cx="120" cy="120" r="44" fill="url(#ocean)"/>
+  <g clip-path="url(#globe)"><g transform="translate(120 120) scale(.88) translate(-120 -120)">
+    <g stroke="#ffffff" stroke-opacity=".18" stroke-width=".9" fill="none">
+      <ellipse cx="120" cy="120" rx="22" ry="49"/><ellipse cx="120" cy="120" rx="40" ry="49"/>
+      <line x1="71" y1="120" x2="169" y2="120"/><path d="M74,96 Q120,88 166,96"/><path d="M74,144 Q120,152 166,144"/>
+    </g>
+    <path d="M76,88 L84,82 L94,80 L100,84 L108,80 L118,76 L130,78 L140,74 L150,80 L146,88 L136,92 L132,100 L138,106 L146,104 L152,98 L158,104 L154,114 L150,122 L144,126 L140,134 L136,146 L140,150 L134,150 L126,142 L116,144 L110,148 L112,156 L122,160 L128,164 L126,170 L118,162 L112,154 L104,146 L100,138 L96,142 L98,132 L92,124 L88,114 L86,104 L82,98 L78,96 Z" fill="#f4f8ff"/>
+    <path d="M150,70 L166,70 L164,84 L154,86 L148,78 Z" fill="#f4f8ff" opacity=".9"/>
+  </g></g>
+  <circle cx="120" cy="120" r="44" fill="none" stroke="#0b2a6b" stroke-width="2"/>
+</svg>

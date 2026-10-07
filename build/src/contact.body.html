@@ -1,0 +1,102 @@
+<section class="page-hero">
+  <div class="layer" data-speed="0.2"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:#f0cf84">Client intake</span>
+    <h1>Let's get you sorted.</h1>
+    <p class="lede" style="max-width:62ch">Tell us what you need in about two minutes. A real person from the JEZFI team will get back to you within 24 hours.</p>
+  </div>
+</section>
+
+<section class="section" id="intake" style="padding-top:clamp(40px,6vw,70px)">
+  <div class="container contact-grid">
+    <div class="form-card">
+      <ol class="steps" id="steps" aria-hidden="true"><li class="on"></li><li></li><li></li></ol>
+      <form id="intakeForm" name="intake" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="intake">
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <!-- step 1 -->
+        <fieldset class="step on" data-step="1" style="border:0;padding:0;margin:0">
+          <legend style="font:700 1.9rem var(--display);color:var(--navy);margin-bottom:6px">What do you need help with?</legend>
+          <p style="color:var(--muted)">Choose everything that applies.</p>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="services" value="Personal tax return"><span>{{icon:person}} Personal tax return</span></label>
+            <label class="opt"><input type="checkbox" name="services" value="Corporate tax return"><span>{{icon:building}} Corporate tax return</span></label>
+            <label class="opt"><input type="checkbox" name="services" value="HST/GST"><span>{{icon:receipt}} HST / GST filing</span></label>
+            <label class="opt"><input type="checkbox" name="services" value="Bookkeeping"><span>{{icon:books}} Bookkeeping and statements</span></label>
+            <label class="opt"><input type="checkbox" name="services" value="Payroll"><span>{{icon:wallet}} Payroll</span></label>
+            <label class="opt"><input type="checkbox" name="services" value="Incorporation or business plan"><span>{{icon:rocket}} Incorporation or business plan</span></label>
+            <label class="opt"><input type="checkbox" name="services" value="CRA letter or audit"><span>{{icon:shield}} CRA letter or audit</span></label>
+            <label class="opt"><input type="checkbox" name="services" value="Tax planning and advice"><span>{{icon:scale}} Tax planning and advice</span></label>
+          </div>
+          <div class="status err" id="err1" role="alert" hidden>Please choose at least one option so we can point you to the right person.</div>
+          <div class="form-nav"><span></span><button type="button" class="btn btn-primary" data-next>Continue {{icon:arrow}}</button></div>
+        </fieldset>
+
+        <!-- step 2 -->
+        <fieldset class="step" data-step="2" style="border:0;padding:0;margin:0">
+          <legend style="font:700 1.9rem var(--display);color:var(--navy);margin-bottom:6px">A little about your situation</legend>
+          <p style="color:var(--muted)">This helps us prepare before we speak.</p>
+          <div class="field"><label>Who is this for?</label>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="client_type" value="Individual" checked><span>Me, as an individual</span></label>
+              <label class="opt"><input type="radio" name="client_type" value="Self employed"><span>I am self employed</span></label>
+              <label class="opt"><input type="radio" name="client_type" value="Business owner"><span>I own a corporation</span></label>
+              <label class="opt"><input type="radio" name="client_type" value="Family"><span>Me and my family</span></label>
+            </div></div>
+          <div class="field"><label for="year">Which year do you need help with?</label>
+            <select class="input" id="year" name="tax_year"><option>2025 return</option><option>2026 planning</option><option>Several prior years</option><option>Not sure yet</option></select></div>
+          <div class="field"><label>Does any of this apply? (optional)</label>
+            <div class="opts">
+              <label class="opt"><input type="checkbox" name="situation" value="Rental income"><span>Rental income</span></label>
+              <label class="opt"><input type="checkbox" name="situation" value="Investments or crypto"><span>Investments or crypto</span></label>
+              <label class="opt"><input type="checkbox" name="situation" value="Foreign or US income"><span>Foreign or US income</span></label>
+              <label class="opt"><input type="checkbox" name="situation" value="New to Canada"><span>New to Canada</span></label>
+              <label class="opt"><input type="checkbox" name="situation" value="Received CRA notice"><span>I received a CRA notice</span></label>
+              <label class="opt"><input type="checkbox" name="situation" value="Behind on filing"><span>Behind on filing</span></label>
+            </div></div>
+          <div class="form-nav"><button type="button" class="btn btn-ghost" style="color:var(--navy)" data-prev>Back</button><button type="button" class="btn btn-primary" data-next>Continue {{icon:arrow}}</button></div>
+        </fieldset>
+
+        <!-- step 3 -->
+        <fieldset class="step" data-step="3" style="border:0;padding:0;margin:0">
+          <legend style="font:700 1.9rem var(--display);color:var(--navy);margin-bottom:6px">How can we reach you?</legend>
+          <div class="row2">
+            <div class="field"><label for="name">Full name</label><input class="input" id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="phone">Phone</label><input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="905 555 0123"></div>
+          </div>
+          <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="row2">
+            <div class="field"><label for="pref">Best way to reach you</label><select class="input" id="pref" name="contact_preference"><option>Either phone or email</option><option>Phone</option><option>Email</option></select></div>
+            <div class="field"><label for="when">Best time</label><select class="input" id="when" name="best_time"><option>Anytime</option><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Weekend (by appointment)</option></select></div>
+          </div>
+          <div class="field"><label for="msg">Anything else we should know?</label><textarea class="input" id="msg" name="message" rows="4" placeholder="A quick note about your situation or question."></textarea></div>
+          <div class="callout">For your safety, please do not include your SIN, banking details or passwords here. We will collect documents securely once we speak.</div>
+          <label class="check"><input type="checkbox" id="consent" name="consent" value="yes" required> I agree that JEZFI Associates may contact me about this request.</label>
+          <div class="status err" id="err3" role="alert" hidden></div>
+          <div class="status ok" id="ok" role="status" hidden></div>
+          <div class="form-nav"><button type="button" class="btn btn-ghost" style="color:var(--navy)" data-prev>Back</button><button type="submit" class="btn btn-gold" id="send">Send my request</button></div>
+        </fieldset>
+      </form>
+      <div id="thanks" hidden style="text-align:center;padding:30px 10px">
+        <div style="width:84px;height:84px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:#e6f8f0;color:#0b6444"><svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <h2 style="font-size:2rem">Thank you, we have it.</h2>
+        <p class="lede" style="margin-inline:auto">Someone from the JEZFI team will contact you within 24 hours. Need us sooner? Call <a href="tel:+19052680003">905-268-0003</a>.</p>
+        <a class="btn btn-primary" href="tools.html#checklist">Get your document checklist {{icon:arrow}}</a>
+      </div>
+    </div>
+
+    <aside class="info-card" aria-label="Contact details">
+      <h3>JEZFI Associates</h3>
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:+19052680003">905-268-0003</a></dd>
+        <dt>Toll free</dt><dd><a href="tel:+18665740003">1-866-574-0003</a></dd>
+        <dt>Fax</dt><dd>905-268-0004</dd>
+        <dt>Email</dt><dd><a href="mailto:info@jezfi.com">info@jezfi.com</a></dd>
+        <dt>Visit</dt><dd>1235 Queensway East, Suite 17<br>Mississauga, Ontario L4Y 0G4<br><a href="https://www.google.com/maps/search/?api=1&amp;query=1235+Queensway+East+Suite+17+Mississauga+ON+L4Y+0G4" target="_blank" rel="noopener">Get directions &#8599;</a></dd>
+        <dt>Hours</dt><dd><table class="hours"><tr><td>Mon to Fri</td><td>9:00 am to 6:00 pm</td></tr><tr><td>Sat and Sun</td><td>10:00 am to 6:00 pm</td></tr></table><small style="color:#a9b9e8">Weekends by appointment only</small></dd>
+        <dt>We accept</dt><dd><div class="pay"><span>Cash</span><span>Cheque</span><span>Visa</span><span>Mastercard</span><span>PayPal</span><span>Amex</span><span>Interac e-Transfer</span></div></dd>
+      </dl>
+    </aside>
+  </div>
+</section>

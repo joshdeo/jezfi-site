@@ -1,0 +1,13 @@
+{
+  "name": "jezfi-associates-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JEZFI Associates website: static pages plus a scheduled function for daily tax news.",
+  "scripts": {
+    "build": "python3 build/build.py",
+    "test": "node tests/tax.test.js && node tests/feed.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

@@ -1,0 +1,180 @@
+<section class="page-hero">
+  <div class="layer" data-speed="0.2"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:#f0cf84">Free tools</span>
+    <h1>Know your numbers.</h1>
+    <p class="lede" style="max-width:62ch">Nine Canadian calculators built on 2026 federal and Ontario figures. They run entirely in your browser, so nothing you type is stored or sent anywhere.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:10px">
+  <div class="container">
+    <div class="tabs" role="tablist" aria-label="Calculators" id="tabs">
+      <button class="tab on" role="tab" data-tab="estimator">{{icon:calc}} Tax estimator</button>
+      <button class="tab" role="tab" data-tab="rrsp">{{icon:piggy}} RRSP and FHSA</button>
+      <button class="tab" role="tab" data-tab="tfsa">{{icon:leaf}} TFSA room</button>
+      <button class="tab" role="tab" data-tab="capgains">{{icon:chart}} Capital gains</button>
+      <button class="tab" role="tab" data-tab="hst">{{icon:receipt}} HST and GST</button>
+      <button class="tab" role="tab" data-tab="mortgage">{{icon:home}} Mortgage</button>
+      <button class="tab" role="tab" data-tab="invoice">{{icon:file}} Invoice builder</button>
+      <button class="tab" role="tab" data-tab="checklist">{{icon:check}} Tax checklist</button>
+      <button class="tab" role="tab" data-tab="dates">{{icon:clock}} Key dates</button>
+    </div>
+
+    <!-- ESTIMATOR -->
+    <div class="panel on" id="estimator" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">2026 tax and take home estimator</h2>
+        <p style="color:var(--muted)">For Ontario residents. Includes federal and Ontario tax, surtax, the Ontario Health Premium, CPP, CPP2 and EI.</p>
+        <div class="field"><label for="e_emp">Employment income (T4)</label><div class="money"><input class="input" id="e_emp" type="number" inputmode="decimal" min="0" step="500" value="85000"></div></div>
+        <div class="field"><label for="e_oth">Other income (interest, rental, net self employment, taxable gains)</label><div class="money"><input class="input" id="e_oth" type="number" inputmode="decimal" min="0" step="500" value="0"></div></div>
+        <div class="row2">
+          <div class="field"><label for="e_rrsp">RRSP or FHSA deduction</label><div class="money"><input class="input" id="e_rrsp" type="number" inputmode="decimal" min="0" step="500" value="0"></div></div>
+          <div class="field"><label for="e_ded">Other deductions</label><div class="money"><input class="input" id="e_ded" type="number" inputmode="decimal" min="0" step="100" value="0"></div></div>
+        </div>
+        <label class="check"><input type="checkbox" id="e_pay" checked> CPP and EI are withheld from my pay (employee)</label>
+        <div class="callout">This estimate uses the basic personal amount, CPP and EI credits only. Tuition, medical, donations, the Canada employment amount and other credits can lower your tax, so your filed return will differ. We would be glad to run the real numbers for you.</div>
+      </div>
+      <div class="result-card">
+        <div class="receipt" aria-live="polite">
+          <h4>2026 Tax Summary</h4>
+          <div id="e_receipt"></div>
+        </div>
+        <div class="stack" id="e_stack" aria-hidden="true"></div>
+        <div class="stack-legend" id="e_legend"></div>
+        <div class="kpis" id="e_kpis"></div>
+        <h4 style="margin:26px 0 8px;font-family:var(--sans);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">How your income fills each bracket</h4>
+        <div class="scroll"><table class="tbl" id="e_brackets"></table></div>
+      </div>
+    </div>
+
+    <!-- RRSP / FHSA -->
+    <div class="panel" id="rrsp" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">RRSP and FHSA tax savings</h2>
+        <p style="color:var(--muted)">Both are deductible. See what a contribution could return at your tax rate.</p>
+        <div class="field"><label for="r_type">Account</label><select class="input" id="r_type"><option value="rrsp">RRSP</option><option value="fhsa">FHSA (first home savings account)</option></select></div>
+        <div class="field"><label for="r_inc">2026 income before the deduction</label><div class="money"><input class="input" id="r_inc" type="number" min="0" step="500" value="85000"></div></div>
+        <div class="field"><label for="r_con">Planned contribution</label><div class="money"><input class="input" id="r_con" type="number" min="0" step="100" value="10000"></div></div>
+        <div id="r_roomwrap">
+          <div class="row2">
+            <div class="field"><label for="r_earn">2025 earned income</label><div class="money"><input class="input" id="r_earn" type="number" min="0" step="500" value="85000"></div></div>
+            <div class="field"><label for="r_unused">Unused room carried forward</label><div class="money"><input class="input" id="r_unused" type="number" min="0" step="100" value="0"></div></div>
+          </div>
+        </div>
+        <div class="callout" id="r_note"></div>
+      </div>
+      <div class="result-card"><div class="receipt"><h4 id="r_title">RRSP summary</h4><div id="r_receipt"></div></div><div class="kpis" id="r_kpis"></div></div>
+    </div>
+
+    <!-- TFSA -->
+    <div class="panel" id="tfsa" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">TFSA contribution room</h2>
+        <p style="color:var(--muted)">Your room starts the year you turned 18 (or became a Canadian resident), but never earlier than 2009. The CRA My Account shows your official figure.</p>
+        <div class="field"><label for="t_year">First year you were eligible</label><select class="input" id="t_year"></select></div>
+        <div class="row2">
+          <div class="field"><label for="t_con">Total contributed, all years</label><div class="money"><input class="input" id="t_con" type="number" min="0" step="100" value="0"></div></div>
+          <div class="field"><label for="t_wd">Withdrawn in years before 2026</label><div class="money"><input class="input" id="t_wd" type="number" min="0" step="100" value="0"></div></div>
+        </div>
+        <div class="callout">Withdrawals add back to your room only in the following calendar year. Exceeding your room costs 1% per month on the excess, so check the CRA figure before a large contribution.</div>
+      </div>
+      <div class="result-card"><div class="receipt"><h4>TFSA room, 2026</h4><div id="t_receipt"></div></div><div class="scroll"><table class="tbl" id="t_table"></table></div></div>
+    </div>
+
+    <!-- CAPITAL GAINS -->
+    <div class="panel" id="capgains" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">Capital gains tax</h2>
+        <p style="color:var(--muted)">In 2026 one half of a capital gain is taxable. The proposed increase to two thirds was cancelled.</p>
+        <div class="field"><label for="c_gain">Capital gain</label><div class="money"><input class="input" id="c_gain" type="number" min="0" step="500" value="50000"></div></div>
+        <div class="field"><label for="c_inc">Your other 2026 income</label><div class="money"><input class="input" id="c_inc" type="number" min="0" step="500" value="85000"></div></div>
+        <div class="callout">The sale of your principal residence is generally not taxable, and other exemptions may apply. Confirm your situation with us before you sell.</div>
+      </div>
+      <div class="result-card"><div class="receipt"><h4>Capital gain summary</h4><div id="c_receipt"></div></div><div class="kpis" id="c_kpis"></div></div>
+    </div>
+
+    <!-- HST -->
+    <div class="panel" id="hst" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">HST and GST calculator</h2>
+        <p style="color:var(--muted)">Add or remove sales tax for any province or territory.</p>
+        <div class="field"><label for="h_prov">Province</label><select class="input" id="h_prov"></select></div>
+        <div class="field"><label for="h_amt">Amount</label><div class="money"><input class="input" id="h_amt" type="number" min="0" step="0.01" value="1000"></div></div>
+        <div class="opts" style="margin-top:6px">
+          <label class="opt"><input type="radio" name="h_mode" value="add" checked><span>Add tax to price</span></label>
+          <label class="opt"><input type="radio" name="h_mode" value="remove"><span>Price includes tax</span></label>
+        </div>
+        <div class="callout">Registered businesses collect tax and may recover what they pay through input tax credits. Rates shown are the current combined rates. Quebec QST and PST rules vary by product.</div>
+      </div>
+      <div class="result-card"><div class="receipt"><h4 id="h_title">Ontario HST 13%</h4><div id="h_receipt"></div></div></div>
+    </div>
+
+    <!-- MORTGAGE -->
+    <div class="panel" id="mortgage" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">Mortgage calculator</h2>
+        <p style="color:var(--muted)">Uses Canadian semi annual compounding for fixed rate mortgages.</p>
+        <div class="field"><label for="m_amt">Mortgage amount</label><div class="money"><input class="input" id="m_amt" type="number" min="0" step="5000" value="500000"></div></div>
+        <div class="row2">
+          <div class="field"><label for="m_rate">Interest rate (%)</label><input class="input" id="m_rate" type="number" min="0" max="25" step="0.01" value="5"></div>
+          <div class="field"><label for="m_am">Amortization</label><select class="input" id="m_am"><option>15</option><option>20</option><option selected>25</option><option>30</option></select></div>
+        </div>
+        <div class="field"><label for="m_extra">Extra payment each month</label><div class="money"><input class="input" id="m_extra" type="number" min="0" step="50" value="0"></div></div>
+        <div class="callout">Quotes from lenders include their own rules and may differ slightly. This tool is for planning.</div>
+      </div>
+      <div class="result-card"><div class="receipt"><h4>Mortgage summary</h4><div id="m_receipt"></div></div><div class="kpis" id="m_kpis"></div></div>
+    </div>
+
+    <!-- INVOICE -->
+    <div class="panel" id="invoice" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">Invoice builder</h2>
+        <p style="color:var(--muted)">Build a clean invoice with the right sales tax, then print it or save it as a PDF.</p>
+        <div class="row2">
+          <div class="field"><label for="i_from">From (your business)</label><input class="input" id="i_from" placeholder="Business name"></div>
+          <div class="field"><label for="i_to">Bill to</label><input class="input" id="i_to" placeholder="Client name"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="i_no">Invoice number</label><input class="input" id="i_no" value="1001"></div>
+          <div class="field"><label for="i_date">Date</label><input class="input" id="i_date" type="date"></div>
+        </div>
+        <div class="field"><label for="i_bn">GST/HST registration number (optional)</label><input class="input" id="i_bn" placeholder="123456789 RT0001"></div>
+        <div class="field"><label for="i_prov">Sales tax</label><select class="input" id="i_prov"></select></div>
+        <label style="font-size:.82rem;font-weight:600">Line items</label>
+        <div class="items" id="i_items"></div>
+        <button class="btn btn-ghost btn-sm" style="margin-top:10px;color:var(--blue)" type="button" id="i_add">Add a line</button>
+        <div class="field"><label for="i_notes">Notes or payment terms</label><textarea class="input" id="i_notes" rows="2" placeholder="Payment due within 30 days. Interac e-Transfer accepted."></textarea></div>
+        <button class="btn btn-primary" type="button" id="i_print">{{icon:print}} Print or save as PDF</button>
+      </div>
+      <div class="result-card" style="padding:18px"><div class="invoice" id="i_preview"></div></div>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="panel" id="checklist" role="tabpanel">
+      <div class="form-card">
+        <h2 style="font-size:1.8rem">Tax document checklist</h2>
+        <p style="color:var(--muted)">Choose what applies to you and we will list the documents to gather before you meet with us.</p>
+        <div class="filters" id="k_filters" style="padding:0;border:0"></div>
+        <div class="callout" style="margin-top:22px">Bring slips and receipts to your appointment or send them through the secure channel we agree on. Please do not email your SIN or banking details.</div>
+        <button class="btn btn-primary btn-sm" style="margin-top:18px" type="button" id="k_print">{{icon:print}} Print or save as PDF</button>
+      </div>
+      <div class="result-card">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0">Your checklist</h3><strong id="k_count" style="color:var(--blue)">0 of 0</strong></div>
+        <div class="progress-line"><i id="k_bar"></i></div>
+        <ul class="checklist" id="k_list"></ul>
+      </div>
+    </div>
+
+    <!-- KEY DATES -->
+    <div class="panel" id="dates" role="tabpanel">
+      <div class="form-card" style="grid-column:1/-1">
+        <h2 style="font-size:1.8rem">Key tax dates, 2026 to 2027</h2>
+        <p style="color:var(--muted)">General CRA deadlines for individuals and self employed Canadians. Add any of them to your calendar. Your own dates may differ, so confirm on <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html" target="_blank" rel="noopener">canada.ca</a>.</p>
+        <div id="d_list" class="grid g2" style="margin-top:20px"></div>
+      </div>
+    </div>
+
+    <p class="disclaimer">These tools provide general estimates for planning and education. They are not tax advice and do not replace a filed return or a conversation with a professional. Figures reflect the 2026 federal and Ontario rules published by the CRA and the Province of Ontario at the time of writing. <a href="contact.html#intake">Book a consult</a> and we will run your real numbers.</p>
+  </div>
+</section>

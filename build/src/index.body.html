@@ -1,0 +1,154 @@
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="layer ledger" data-speed="0.12"></div>
+  <img class="layer mark-big" src="assets/logo-mark.svg" alt="" data-speed="0.28" data-rotate="0.05">
+  <span class="token" style="left:27%;top:9%;animation-delay:-1s" data-speed="0.45">T4 <b>slip</b></span>
+  <span class="token" style="left:50%;top:7%;animation-delay:-3s" data-speed="0.6">RRSP limit <b>$33,810</b></span>
+  <span class="token" style="right:3%;top:14%;animation-delay:-2s" data-speed="0.4">TFSA <b>$7,000</b></span>
+  <span class="token" style="left:6%;bottom:4%;animation-delay:-4s" data-speed="0.55">Ontario HST <b>13%</b></span>
+  <span class="token" style="right:12%;bottom:4%;animation-delay:-5s" data-speed="0.7">File by <b>Apr 30</b></span>
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow" style="color:#f0cf84">Mississauga, Ontario &nbsp;·&nbsp; Serving Canada since 1995</span>
+      <h1>Taxes and accounting, <em>made clear.</em></h1>
+      <p class="lede">Personal and corporate tax, HST/GST, bookkeeping, payroll and planning from a Mississauga firm that has looked after clients across Canada for over thirty years.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="contact.html#intake">Start your intake {{icon:arrow}}</a>
+        <a class="btn btn-ghost" href="tools.html#estimator">Try the 2026 tax estimator</a>
+      </div>
+      <ul class="chips"><li>Personal tax</li><li>Corporate tax</li><li>HST/GST</li><li>Payroll</li><li>Bookkeeping</li><li>CRA audit support</li></ul>
+    </div>
+    <aside class="glass" aria-labelledby="snapT">
+      <h3 id="snapT">2026 Ontario tax snapshot</h3>
+      <small>Move the number. Watch where each dollar goes.</small>
+      <div class="field"><label for="heroIncome">Annual employment income</label>
+        <div class="money"><input class="input" id="heroIncome" type="number" inputmode="decimal" min="0" step="1000" value="85000"></div></div>
+      <input id="heroSlider" type="range" min="15000" max="300000" step="1000" value="85000" aria-label="Income slider" style="width:100%;accent-color:#f0cf84">
+      <div style="margin-top:16px"><span style="font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:#b9c7ee">Estimated take home</span><div class="big-num" id="heroTake">$0</div></div>
+      <div class="bar" aria-hidden="true"><i id="bTake" style="background:#38d39f"></i><i id="bTax" style="background:#f0cf84"></i><i id="bPay" style="background:#7aa2ff"></i></div>
+      <div class="legend"><span><b style="background:#38d39f"></b>Take home</span><span><b style="background:#f0cf84"></b>Income tax</span><span><b style="background:#7aa2ff"></b>CPP + EI</span></div>
+      <div class="split"><div><span>Income tax</span><strong id="heroTax">$0</strong></div><div><span>Average rate</span><strong id="heroRate">0%</strong></div></div>
+      <p class="fine">Estimate for an Ontario employee, 2026 tax year, basic credits only. <a href="tools.html#estimator" style="color:#f0cf84">Open the full estimator</a>.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="marquee">
+  <span>T1 Personal tax</span><span>T2 Corporate tax</span><span>HST / GST filing</span><span>Payroll and T4s</span><span>Bookkeeping</span><span>Financial statements</span><span>Incorporation</span><span>CRA audit support</span><span>US filings</span>
+</div></div>
+
+<!-- DEADLINE -->
+<div class="container">
+  <div class="deadline reveal" id="deadline">
+    <div><span class="eyebrow" style="margin-bottom:6px">Next key date</span><h3 id="dlTitle">Loading…</h3><p id="dlDesc"></p></div>
+    <div class="when" role="timer" aria-live="off"><div class="unit"><b id="dlD">0</b><span>Days</span></div><div class="unit"><b id="dlH">0</b><span>Hours</span></div><div class="unit"><b id="dlM">0</b><span>Min</span></div><div class="unit"><b id="dlS">0</b><span>Sec</span></div></div>
+    <a class="btn btn-primary btn-sm" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html" target="_blank" rel="noopener">All CRA dates {{icon:arrow}}</a>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">What we do</span><h2>Comprehensive accounting, one team</h2>
+      <p class="lede">From a single personal return to a growing corporation with payroll, we handle the numbers and the paperwork so you can get on with your life or your business.</p></div>
+    <div class="grid g3" style="margin-top:46px">
+      <article class="card tilt reveal"><div class="ico">{{icon:person}}</div><h3>Personal Tax</h3><p>Accurate, well planned returns, set up to keep the most in your pocket.</p><ul><li>Personal tax preparation and filing</li><li>Best scenario planning to save tax</li><li>Help with CRA reviews</li></ul></article>
+      <article class="card tilt reveal d1"><div class="ico">{{icon:building}}</div><h3>Corporate Tax</h3><p>Compliance and planning for owners, whatever the size or complexity.</p><ul><li>Corporate tax returns</li><li>Planning for personal and corporate taxes together</li><li>US filings through trusted US specialists</li></ul></article>
+      <article class="card tilt reveal d2"><div class="ico">{{icon:scale}}</div><h3>Tax Advisory</h3><p>Straight answers on a tax system that keeps getting more complex.</p><ul><li>Tax planning and strategy</li><li>Network of law and accounting associates for complex cases</li><li>Ongoing advice, not just once a year</li></ul></article>
+      <article class="card tilt reveal"><div class="ico">{{icon:receipt}}</div><h3>HST / GST</h3><p>Registration, filing and compliance, done on time.</p><ul><li>HST/GST filing and compliance</li><li>Import and export reporting</li><li>Compliance reviews and audits</li></ul></article>
+      <article class="card tilt reveal d1"><div class="ico">{{icon:books}}</div><h3>Accounting and Bookkeeping</h3><p>Complete books for small and medium sized businesses, kept confidential.</p><ul><li>Bank, cash and credit card reconciliation</li><li>General ledger, receivables, payables</li><li>Financial statements and Notice to Reader reports</li><li>On site bookkeeping training for your staff</li></ul></article>
+      <article class="card tilt reveal d2"><div class="ico">{{icon:wallet}}</div><h3>Payroll</h3><p>Quick, accurate payroll for Canadian employers, with direct deposit and online reporting.</p><ul><li>Payroll maintenance and remittances</li><li>WSIB and EHT filing</li><li>T4, T4A, T5, T5018 and ROE issuance</li></ul></article>
+      <article class="card tilt reveal"><div class="ico">{{icon:rocket}}</div><h3>Business Registration and Planning</h3><p>Starting out or scaling up, we help you make sound decisions and access financing.</p><ul><li>Federal and provincial incorporation</li><li>Business plans and pro forma statements</li><li>Business development and consulting</li></ul></article>
+      <article class="card tilt reveal d1"><div class="ico">{{icon:shield}}</div><h3>CRA and Compliance Audits</h3><p>A letter from the CRA does not have to be a crisis. We stand beside you through it.</p><ul><li>Audit and review support</li><li>Notice and correspondence help</li><li>Clear communication every step</li></ul></article>
+      <article class="card tilt reveal d2" style="background:linear-gradient(145deg,var(--navy),var(--navy-2));color:#fff;border:0"><div class="ico" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#f0cf84">{{icon:calc}}</div><h3 style="color:#fff">Not sure where to start?</h3><p style="color:#cdd8f6">Try our free Canadian calculators, then book a conversation about your numbers.</p><a class="btn btn-gold btn-sm" href="tools.html">Open the tools {{icon:arrow}}</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="band section" style="padding:clamp(54px,7vw,90px) 0">
+  <div class="layer" data-speed="0.18"></div>
+  <div class="container"><div class="stats">
+    <div class="stat reveal"><b data-count-years="1995">31</b><span>years serving clients</span></div>
+    <div class="stat reveal d1"><b data-count="8">8</b><span>service areas under one roof</span></div>
+    <div class="stat reveal d2"><b data-count="24">24</b><span>hour response target on appointment requests</span></div>
+    <div class="stat reveal d3"><b data-count="7">7</b><span>days a week, weekends by appointment</span></div>
+  </div></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about">
+    <div class="reveal">
+      <span class="eyebrow">About the firm</span>
+      <h2>World class accounting and customer service, right here in Mississauga.</h2>
+      <p class="lede">JEZFI was established in 1995 with one goal: high quality professional services in accounting, tax and financial planning at an affordable price.</p>
+      <p>Whatever the size or complexity, the firm has consistently met the financial reporting, compliance and advisory needs of its clients. Our clients come from all over Canada across a variety of business types, and once a relationship is established you enjoy continuous quality service and the personal attention your finances deserve.</p>
+      <ul class="checks">
+        <li>{{icon:check}}<span>Well qualified staff who answer every question and find a satisfactory solution</span></li>
+        <li>{{icon:check}}<span>Affordable fees matched to your budget and your exact needs</span></li>
+        <li>{{icon:check}}<span>Contactless and remote service available for clients near and far</span></li>
+      </ul>
+    </div>
+    <div class="founder reveal d1">
+      <div class="mono" aria-hidden="true">JH</div>
+      <h3>Jamal Hyder</h3>
+      <p style="font-weight:600;color:#f0cf84;margin-bottom:14px">Chief Executive Officer, JEZFI Associates</p>
+      <p>Mr. Hyder leads the JEZFI team.</p>
+      <a class="btn btn-ghost btn-sm" href="https://ca.linkedin.com/in/jamal-hyder-9ba1912b" target="_blank" rel="noopener" style="color:#fff">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section class="section nominee" id="recognition">
+  <div class="container nominee-wrap">
+    <div class="reveal">
+      <span class="eyebrow">Recognition</span>
+      <h2>A 2020 nominee for Accountant Partner of the Year.</h2>
+      <p class="lede">JEZFI Associates was named a nominee for Accountant Partner of the Year in the Sage Circle of Excellence Accounting Awards.</p>
+      <p>We are proud of it, and we keep working like we are still earning it: clear communication, honest advice and fast answers for every client.</p>
+      <a class="btn btn-primary" href="contact.html#intake">Work with us {{icon:arrow}}</a>
+    </div>
+    <figure class="badge-card reveal d1" style="margin:0"><img src="assets/nominee-2020.svg" alt="Sage Circle of Excellence Accounting Awards 2020 Nominee, Accountant Partner of the Year" width="1200" height="630"></figure>
+  </div>
+</section>
+
+<!-- LEARN TEASER -->
+<section class="section" style="background:#fff;border-block:1px solid var(--line)" id="learn">
+  <div class="container">
+    <div class="news-head reveal"><div><span class="eyebrow">Learn</span><h2 style="margin:0">Canadian tax news, fresh every morning</h2></div>
+      <a class="btn btn-primary" href="learn.html#news">All news and resources {{icon:arrow}}</a></div>
+    <div class="news-grid" id="newsHome" data-limit="3" data-compact="1"></div>
+  </div>
+</section>
+
+<!-- TOOLS TEASER -->
+<section class="section" id="tools">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">Free tools</span><h2>Know your numbers before you call</h2><p class="lede">Built around 2026 Canadian and Ontario figures. Private by design: everything runs in your browser and nothing you type is sent anywhere.</p></div>
+    <div class="grid g4" style="margin-top:44px">
+      <a class="card reveal" href="tools.html#estimator" style="text-decoration:none"><div class="ico">{{icon:calc}}</div><h3>Tax and take home estimator</h3><p style="color:var(--muted);font-size:.94rem">Federal, Ontario, CPP and EI with a bracket by bracket breakdown.</p></a>
+      <a class="card reveal d1" href="tools.html#rrsp" style="text-decoration:none"><div class="ico">{{icon:piggy}}</div><h3>RRSP savings</h3><p style="color:var(--muted);font-size:.94rem">See your room and the tax refund a contribution could create.</p></a>
+      <a class="card reveal d2" href="tools.html#hst" style="text-decoration:none"><div class="ico">{{icon:receipt}}</div><h3>HST and GST</h3><p style="color:var(--muted);font-size:.94rem">Add or remove sales tax for any province in two clicks.</p></a>
+      <a class="card reveal d3" href="tools.html#mortgage" style="text-decoration:none"><div class="ico">{{icon:home}}</div><h3>Mortgage</h3><p style="color:var(--muted);font-size:.94rem">Canadian semi annual compounding, with extra payment savings.</p></a>
+    </div>
+    <p class="center" style="margin-top:28px"><a href="tools.html">See all nine tools {{icon:arrow}}</a></p>
+  </div>
+</section>
+
+<!-- CTA / VISIT -->
+<section class="band section" id="visit" style="padding:clamp(60px,8vw,100px) 0">
+  <div class="layer" data-speed="0.15"></div>
+  <div class="container" style="display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center">
+    <div class="reveal"><span class="eyebrow" style="color:#f0cf84">Let's talk</span><h2 style="color:#fff">Fill out the intake and we will get back to you within 24 hours.</h2>
+      <p style="color:#cdd8f6;font-size:1.1rem">Tell us what you need in a couple of minutes. We will take it from there.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap"><a class="btn btn-gold" href="contact.html#intake">Start your intake {{icon:arrow}}</a><a class="btn btn-ghost" style="color:#fff" href="tel:+19052680003">Call 905-268-0003</a></div></div>
+    <div class="glass reveal d1">
+      <h3>Visit us</h3>
+      <p style="color:#dbe5ff;margin-bottom:8px">1235 Queensway East, Suite 17<br>Mississauga, Ontario L4Y 0G4</p>
+      <p style="margin-bottom:10px"><a style="color:#f0cf84;font-weight:700" href="https://www.google.com/maps/search/?api=1&amp;query=1235+Queensway+East+Suite+17+Mississauga+ON+L4Y+0G4" target="_blank" rel="noopener">Get directions</a></p>
+      <p style="color:#dbe5ff;margin:0"><strong style="color:#fff">Mon to Fri</strong> 9:00 am to 6:00 pm<br><strong style="color:#fff">Sat and Sun</strong> 10:00 am to 6:00 pm, by appointment</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Tax News and Resources | JEZFI Associates</title>
+<meta name="description" content="A fresh Canadian tax article every morning, plus a curated CRA resource library and plain language tax glossary.">
+<meta name="theme-color" content="#0a1f52">
+<meta property="og:title" content="Daily Tax News and Resources | JEZFI Associates"><meta property="og:description" content="A fresh Canadian tax article every morning, plus a curated CRA resource library and plain language tax glossary."><meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600..800;1,9..144,500..800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AccountingService","name":"JEZFI Associates","url":"https://www.jezfi.com/","telephone":"+1-905-268-0003","email":"info@jezfi.com","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"1235 Queensway East, Suite 17","addressLocality":"Mississauga","addressRegion":"ON","postalCode":"L4Y 0G4","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}]}</script>
+</head>
+<body data-page="learn">
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<div class="topbar"><div class="container">
+  <span><span class="dot" id="openDot"></span><span id="openText">Mississauga, Ontario</span></span>
+  <span><a href="tel:+19052680003">905-268-0003</a><span class="hide-sm"> &nbsp;·&nbsp; <a href="mailto:info@jezfi.com">info@jezfi.com</a></span></span>
+</div></div>
+<header class="site" id="top"><div class="container nav">
+  <a class="brand" href="index.html" aria-label="JEZFI Associates home"><img src="assets/logo-lockup.svg" alt="JEZFI Associates" width="190" height="50"></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <ul class="menu" id="menu"><li><a href="index.html#services">Services</a></li><li><a href="tools.html">Tools</a></li><li><a href="learn.html" aria-current="page">Learn</a></li><li><a href="index.html#about">About</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn btn-primary btn-sm" href="contact.html#intake" style="color:#fff">Book a consult</a></li></ul>
+</div></header>
+<main id="main">
+<section class="page-hero">
+  <div class="layer" data-speed="0.2"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:#f0cf84">Learn</span>
+    <h1>Taxes, explained.<br><em style="font-style:italic;font-weight:600;color:#f0cf84">News, every morning.</em></h1>
+    <p class="lede" style="max-width:64ch">New to taxes, or just tired of the jargon? Start with today's article, browse trusted CRA guides, and flip through plain language definitions of the terms everyone assumes you know.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn btn-gold" href="#news">Today's briefing</a><a class="btn btn-ghost" href="#resources">Resource library</a><a class="btn btn-ghost" href="#glossary">Tax terms</a></div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="news-head reveal">
+      <div><span class="eyebrow">Daily briefing</span><h2 style="margin:0">Canadian tax news</h2>
+        <p class="lede" style="margin:10px 0 0">A new article from across Canada every morning at 8:00 am Eastern. The newest story leads, older ones step aside, and everything lands in the archive.</p></div>
+      <div class="live"><i></i><span id="nextUpdate">Next article at 8:00 am ET</span></div>
+    </div>
+    <div class="news-grid" id="newsGrid" data-limit="6" aria-live="polite"></div>
+    <div class="center" style="margin-top:30px"><button class="btn btn-primary" id="archiveToggle" type="button" aria-expanded="false" aria-controls="archive">Read more from the archive</button></div>
+
+    <div class="archive" id="archive" hidden>
+      <div class="archive-bar">
+        <h3>News archive</h3>
+        <div class="tools-row">
+          <div class="search"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="input" id="archiveSearch" type="search" placeholder="Search tax news" aria-label="Search the archive"></div>
+        </div>
+      </div>
+      <div class="filters" id="archiveFilters" role="group" aria-label="Filter by topic"></div>
+      <ul class="a-list" id="archiveList"></ul>
+      <div class="a-foot"><span id="archiveCount" style="color:var(--muted);font-size:.9rem"></span><button class="btn btn-ghost btn-sm" id="archiveMore" type="button" style="color:var(--blue)">Show more</button></div>
+    </div>
+    <p style="font-size:.84rem;color:var(--muted);margin-top:18px">Headlines link to their original publishers. Summaries are written by us and are general information, not tax advice.</p>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="section" id="resources" style="background:#fff;border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="reveal"><span class="eyebrow">Resource library</span><h2>Trusted guides, hand picked</h2>
+      <p class="lede">Straight from the Canada Revenue Agency, Service Canada and the Province of Ontario. Each link opens the official page in a new tab.</p></div>
+    <div class="res-group reveal"><h3><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></i>Get started with your taxes</h3><div class="grid g3" style="margin-top:18px">
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html" target="_blank" rel="noopener"><div class="n-art t-filing"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c0-1.5 1.3-2.5 3-2.5s3 1 3 2.5M15 10h3M15 13h3"/></svg></div><div class="b"><h4>CRA My Account</h4><p>Your secure portal for slips, notices, refunds, benefits and RRSP and TFSA room.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html" target="_blank" rel="noopener"><div class="n-art t-filing"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="b"><h4>Due dates and payment dates</h4><p>Filing and payment deadlines for individuals and the self employed.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/get-ready-taxes.html" target="_blank" rel="noopener"><div class="n-art t-filing"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></div><div class="b"><h4>Get ready to file a tax return</h4><p>What to gather, how to file online and what to expect afterward.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/community-volunteer-income-tax-program.html" target="_blank" rel="noopener"><div class="n-art t-benefits"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="b"><h4>Free tax clinics</h4><p>Volunteers prepare returns for people with modest income and simple tax situations.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/e-services/payment-save-time-pay-online.html" target="_blank" rel="noopener"><div class="n-art t-policy"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 7a2 2 0 0 1 2-2h13v4"/><path d="M3 7v11a2 2 0 0 0 2 2h15V9H5a2 2 0 0 1-2-2z"/><circle cx="16.5" cy="14.5" r="1.2"/></svg></div><div class="b"><h4>Pay the CRA online</h4><p>Ways to pay your tax bill, including through your bank and My Payment.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html" target="_blank" rel="noopener"><div class="n-art t-savings"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 7a2 2 0 0 1 2-2h13v4"/><path d="M3 7v11a2 2 0 0 0 2 2h15V9H5a2 2 0 0 1-2-2z"/><circle cx="16.5" cy="14.5" r="1.2"/></svg></div><div class="b"><h4>Direct deposit</h4><p>Get refunds and benefit payments faster, straight into your bank account.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/newcomers-canada-immigrants.html" target="_blank" rel="noopener"><div class="n-art t-housing"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><div class="b"><h4>Newcomers to Canada and the CRA</h4><p>Taxes, benefits and filing steps when you are new to the country.</p><span class="host">canada.ca &#8599;</span></div></a>
+</div></div>
+<div class="res-group reveal"><h3><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M19 12c0-3-3-5-7-5S5 9 5 12c0 2 1 3 2 4v3h3v-1h4v1h3v-3c1-1 2-2 2-4z"/><path d="M19 11h2v3h-2M9 11h0"/></svg></i>Savings and registered plans</h3><div class="grid g3" style="margin-top:18px">
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account.html" target="_blank" rel="noopener"><div class="n-art t-savings"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19c3-5 6-8 11-11"/></svg></div><div class="b"><h4>Tax Free Savings Account (TFSA)</h4><p>How a TFSA works, who can open one and how withdrawals are treated.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/calculate-room.html" target="_blank" rel="noopener"><div class="n-art t-savings"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 18h0M16 15v3"/></svg></div><div class="b"><h4>Calculate your TFSA room</h4><p>The CRA's own method for working out your contribution room.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html" target="_blank" rel="noopener"><div class="n-art t-savings"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M19 12c0-3-3-5-7-5S5 9 5 12c0 2 1 3 2 4v3h3v-1h4v1h3v-3c1-1 2-2 2-4z"/><path d="M19 11h2v3h-2M9 11h0"/></svg></div><div class="b"><h4>How contributions affect your RRSP limit</h4><p>Understand your deduction limit and what happens if you go over.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/contributing-your-fhsa.html" target="_blank" rel="noopener"><div class="n-art t-housing"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10M10 20v-6h4v6"/></svg></div><div class="b"><h4>Participating in your FHSA</h4><p>Annual limits, carry forward room and avoiding over contributions.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/tax-deductions-fhsa-contributions.html" target="_blank" rel="noopener"><div class="n-art t-housing"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg></div><div class="b"><h4>FHSA tax deductions</h4><p>How FHSA contributions reduce your tax, and how to claim them.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html" target="_blank" rel="noopener"><div class="n-art t-business"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></div><div class="b"><h4>Registered plan limits at a glance</h4><p>RRSP, TFSA and CPP earnings limits in one reference page.</p><span class="host">canada.ca &#8599;</span></div></a>
+</div></div>
+<div class="res-group reveal"><h3><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="9" r="5"/><path d="M9.5 9h0M14.5 9h0M10 11.5c1 1 3 1 4 0M6 21c0-3 2.5-5 6-5s6 2 6 5"/></svg></i>Benefits and credits</h3><div class="grid g3" style="margin-top:18px">
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit.html" target="_blank" rel="noopener"><div class="n-art t-benefits"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="9" r="5"/><path d="M9.5 9h0M14.5 9h0M10 11.5c1 1 3 1 4 0M6 21c0-3 2.5-5 6-5s6 2 6 5"/></svg></div><div class="b"><h4>Canada Child Benefit</h4><p>A tax free monthly payment to help with the cost of raising children.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-45300-canada-workers-benefit-cwb/who-is-eligible.html" target="_blank" rel="noopener"><div class="n-art t-benefits"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div><div class="b"><h4>Canada Workers Benefit</h4><p>A refundable credit for people earning a modest income from work.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/accessing-benefits-credits.html" target="_blank" rel="noopener"><div class="n-art t-benefits"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></div><div class="b"><h4>Accessing your benefits and credits</h4><p>Make sure you are getting every payment you qualify for.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.ontario.ca/page/ontario-trillium-benefit" target="_blank" rel="noopener"><div class="n-art t-policy"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10M10 20v-6h4v6"/></svg></div><div class="b"><h4>Ontario Trillium Benefit</h4><p>Ontario's combined energy, property tax and sales tax credit payment.</p><span class="host">ontario.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/services/benefits/ei.html" target="_blank" rel="noopener"><div class="n-art t-scams"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div><div class="b"><h4>Employment Insurance benefits</h4><p>Regular, sickness, maternity, parental and other EI benefits.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/services/benefits/publicpensions.html" target="_blank" rel="noopener"><div class="n-art t-savings"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="b"><h4>Public pensions</h4><p>Canada Pension Plan, Old Age Security and related benefits.</p><span class="host">canada.ca &#8599;</span></div></a>
+</div></div>
+<div class="res-group reveal"><h3><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></i>For business owners</h3><div class="grid g3" style="margin-top:18px">
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/register.html" target="_blank" rel="noopener"><div class="n-art t-business"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></svg></div><div class="b"><h4>Register your business</h4><p>Get your business number and the program accounts you need.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-account/register-account.html" target="_blank" rel="noopener"><div class="n-art t-business"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6"/></svg></div><div class="b"><h4>Register for a GST/HST account</h4><p>When registration is required and how to do it.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html" target="_blank" rel="noopener"><div class="n-art t-business"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 18h0M16 15v3"/></svg></div><div class="b"><h4>Charge and collect the GST/HST</h4><p>Which rate applies and when to collect it from customers.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/how-to-calculate.html" target="_blank" rel="noopener"><div class="n-art t-business"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 7a2 2 0 0 1 2-2h13v4"/><path d="M3 7v11a2 2 0 0 0 2 2h15V9H5a2 2 0 0 1-2-2z"/><circle cx="16.5" cy="14.5" r="1.2"/></svg></div><div class="b"><h4>Calculating payroll deductions</h4><p>How to work out CPP, EI and income tax deductions for employees.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/t4032-payroll-deductions-tables.html" target="_blank" rel="noopener"><div class="n-art t-business"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></div><div class="b"><h4>Payroll deductions tables</h4><p>The CRA's published tables for withholding on employee pay.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.ontario.ca/document/your-guide-employment-standards-act-0" target="_blank" rel="noopener"><div class="n-art t-policy"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 3v18M5 21h14M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0L5 7zM19 7l-3 7a3 3 0 0 0 6 0l-3-7z"/></svg></div><div class="b"><h4>Employment standards in Ontario</h4><p>A plain language guide to the Employment Standards Act for employers and workers.</p><span class="host">ontario.ca &#8599;</span></div></a>
+</div></div>
+<div class="res-group reveal"><h3><i><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></i>Stay safe from scams</h3><div class="grid g3" style="margin-top:18px">
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html" target="_blank" rel="noopener"><div class="n-art t-scams"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h0"/></svg></div><div class="b"><h4>Recognize a scam</h4><p>How to spot fake CRA calls, texts and emails, and what the CRA will never ask.</p><span class="host">canada.ca &#8599;</span></div></a>
+<a class="r-card" href="https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2025/how-cra-is-keeping-information-safe.html" target="_blank" rel="noopener"><div class="n-art t-scams"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div><div class="b"><h4>How the CRA protects your account</h4><p>Multi factor sign in, phishing site takedowns and safe habits for tax season.</p><span class="host">canada.ca &#8599;</span></div></a>
+</div></div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section class="section" id="glossary">
+  <div class="container">
+    <div class="reveal"><span class="eyebrow">Tax terms, explained</span><h2>The jargon, without the headache</h2>
+      <p class="lede">Tap a card to flip it. Twelve terms that come up every tax season, in plain language.</p></div>
+    <div class="grid g4" id="gloss" style="margin-top:36px"></div>
+  </div>
+</section>
+
+<section class="band section" style="padding:clamp(54px,7vw,90px) 0">
+  <div class="layer" data-speed="0.15"></div>
+  <div class="container center reveal"><h2 style="color:#fff">Still have questions?</h2><p style="color:#cdd8f6;font-size:1.1rem;max-width:56ch;margin-inline:auto">That is what we are here for. Tell us what is on your mind and a real person will answer within one business day.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center"><a class="btn btn-gold" href="contact.html#intake">Start your intake <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" style="color:#fff" href="tools.html">Try the calculators</a></div></div>
+</section>
+</main>
+<footer class="site"><div class="container">
+  <div class="f-grid">
+    <div>
+      <img src="assets/logo-lockup.svg" alt="JEZFI Associates">
+      <p>Accounting, tax and financial planning from Mississauga, serving clients across Canada since 1995.</p>
+      <div class="soc">
+        <a href="https://www.facebook.com/JEZFI" aria-label="JEZFI on Facebook" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v3H7v4h3v5h4v-5h3l1-4h-4V9z"/></svg></a>
+        <a href="https://twitter.com/JEZFIinc" aria-label="JEZFI on X" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        <a href="https://ca.linkedin.com/in/jamal-hyder-9ba1912b" aria-label="Jamal Hyder on LinkedIn" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7h0M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+      </div>
+    </div>
+    <div><h4>Firm</h4><ul>
+      <li><a href="index.html#services">Services</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#recognition">Recognition</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Free tools</h4><ul>
+      <li><a href="tools.html#estimator">2026 tax estimator</a></li><li><a href="tools.html#rrsp">RRSP savings</a></li><li><a href="tools.html#tfsa">TFSA room</a></li><li><a href="tools.html#hst">HST calculator</a></li><li><a href="tools.html#invoice">Invoice builder</a></li></ul></div>
+    <div><h4>Learn</h4><ul>
+      <li><a href="learn.html#news">Daily tax news</a></li><li><a href="learn.html#resources">Resource library</a></li><li><a href="learn.html#glossary">Tax terms, explained</a></li>
+      <li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html" rel="noopener" target="_blank">CRA My Account</a></li></ul></div>
+  </div>
+  <div class="legal">
+    <span>&copy; <span id="yr">2026</span> JEZFI Associates. All rights reserved.</span>
+    <span style="max-width:62ch">JEZFI Associates is committed to respecting the privacy of individuals and recognizes the need for appropriate management and protection of any personal information you provide. We will not share your information with any third party outside our organization other than as necessary to fulfill your request.</span>
+  </div>
+</div></footer>
+<script src="js/main.js" defer></script>
+<script src="js/news-seed.js" defer></script>
+<script src="js/news.js" defer></script>
+<script src="js/learn.js" defer></script>
+</body>
+</html>
