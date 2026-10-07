@@ -75,7 +75,7 @@ header.site.scrolled{box-shadow:0 10px 30px -18px rgba(10,31,82,.45)}
 @keyframes slide{to{transform:translateX(-50%)}}
 
 /* deadlines */
-.deadline{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 26px;box-shadow:var(--shadow);margin-top:-46px;position:relative;z-index:5}
+.deadline{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 26px;box-shadow:var(--shadow);margin-top:32px;position:relative;z-index:5}
 .deadline>:first-child{flex:1 1 280px} .deadline .btn{margin-left:auto} .deadline .when{display:flex;gap:10px} .unit{background:var(--navy);color:#fff;border-radius:12px;padding:10px 14px;text-align:center;min-width:70px} .unit b{display:block;font:800 1.7rem var(--display);font-variant-numeric:tabular-nums} .unit span{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#b4c3ee}
 .deadline h3{margin:0 0 2px} .deadline p{margin:0;color:var(--muted);font-size:.92rem}
 
