@@ -30,6 +30,7 @@ header.site{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.82);b
 header.site.scrolled{box-shadow:0 10px 30px -18px rgba(10,31,82,.45)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;height:82px}
 .brand img{height:60px;width:auto}
+footer.site .f-grid .f-logo{height:64px;width:auto;background:#fff;padding:8px 14px;border-radius:12px}
 .menu{display:flex;align-items:center;gap:6px;list-style:none;margin:0;padding:0}
 .menu a{display:block;padding:10px 14px;border-radius:10px;color:var(--navy);font-weight:600;font-size:.96rem} .menu a:hover,.menu a[aria-current="page"]{background:var(--sky);text-decoration:none}
 .burger{display:none;background:none;border:0;padding:10px;cursor:pointer} .burger span{display:block;width:24px;height:2px;background:var(--navy);margin:5px 0;transition:.3s}
@@ -91,7 +92,7 @@ header.site.scrolled{box-shadow:0 10px 30px -18px rgba(10,31,82,.45)}
 /* stats parallax band */
 .band{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,#0a1f52,#12307f)}
 .panel>*,.contact-grid>*,.about>*,.hero-inner>*,.nominee-wrap>*{min-width:0}
-.band .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.svg") center/520px repeat;opacity:.05;filter:invert(1);will-change:transform}
+.band .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.png") center/520px repeat;opacity:.05;filter:invert(1);will-change:transform}
 .band .container{position:relative;z-index:2}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
 .stat b{display:block;font:800 clamp(2.4rem,5vw,4rem) var(--display);color:#fff;font-variant-numeric:tabular-nums} .stat span{color:#b7c5ee;font-size:.95rem}
@@ -101,7 +102,7 @@ header.site.scrolled{box-shadow:0 10px 30px -18px rgba(10,31,82,.45)}
 .founder{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:28px;padding:34px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
 .founder .mono{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font:800 2rem var(--display);background:linear-gradient(135deg,var(--brass-2),var(--brass));color:#2a1d02;margin-bottom:18px}
 .founder h3{color:#fff;font-size:1.6rem;margin-bottom:2px} .founder p{color:#cdd8f6}
-.founder::after{content:"";position:absolute;inset:auto -60px -60px auto;width:240px;height:240px;background:url("../assets/logo-mark.svg") center/contain no-repeat;opacity:.1;filter:invert(1)}
+.founder::after{content:"";position:absolute;inset:auto -60px -60px auto;width:240px;height:240px;background:url("../assets/logo-mark.png") center/contain no-repeat;opacity:.1;filter:invert(1)}
 .checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px} .checks li{display:flex;gap:12px;align-items:flex-start} .checks svg{flex:none;margin-top:3px;color:var(--mint)}
 
 /* nominee */
@@ -212,13 +213,13 @@ table.tbl{width:100%;border-collapse:collapse;font-size:.9rem;font-variant-numer
 /* footer */
 footer.site{background:var(--ink);color:#a8b4d4;padding:70px 0 30px;margin-top:0}
 footer.site h4{color:#fff;font-family:var(--sans);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px} footer.site a{color:#c9d5f5} footer.site ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
-.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px} .f-grid img{height:56px;width:auto;filter:brightness(0) invert(1);opacity:.92;margin-bottom:14px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px} .f-grid img{margin-bottom:14px}
 .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;font-size:.82rem;display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
 .soc{display:flex;gap:10px;margin-top:16px} .soc a{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:.2s} .soc a:hover{background:var(--blue);text-decoration:none}
 
 /* page hero (inner pages) */
 .page-hero{background:linear-gradient(160deg,#06123a,#0a1f52 60%,#0b2a6b);color:#fff;padding:clamp(54px,7vw,96px) 0 clamp(60px,8vw,110px);position:relative;overflow:hidden}
-.page-hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.8rem)} .page-hero .lede{color:#cdd8f6} .page-hero .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.svg") 90% 50%/520px no-repeat;opacity:.08;filter:invert(1);will-change:transform}
+.page-hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.8rem)} .page-hero .lede{color:#cdd8f6} .page-hero .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.png") 90% 50%/520px no-repeat;opacity:.08;filter:invert(1);will-change:transform}
 .page-hero .container{position:relative}
 
 /* reveal */

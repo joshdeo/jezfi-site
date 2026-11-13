@@ -65,7 +65,7 @@ def head(title, desc, page):
 <meta name="description" content="{desc}">
 <meta name="theme-color" content="#0a1f52">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
 {FONTS}
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"AccountingService","name":"JEZFI Associates","url":"https://www.jezfi.com/","telephone":"+1-905-268-0003","email":"info@jezfi.com","foundingDate":"1995","address":{{"@type":"PostalAddress","streetAddress":"1235 Queensway East, Suite 17","addressLocality":"Mississauga","addressRegion":"ON","postalCode":"L4Y 0G4","addressCountry":"CA"}},"openingHoursSpecification":[{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}}]}}</script>
@@ -84,7 +84,7 @@ def header(page):
   <span><a href="tel:+19052680003">905-268-0003</a><span class="hide-sm"> &nbsp;·&nbsp; <a href="mailto:info@jezfi.com">info@jezfi.com</a></span></span>
 </div></div>
 <header class="site" id="top"><div class="container nav">
-  <a class="brand" href="index.html" aria-label="JEZFI Associates home"><img src="assets/logo-lockup.svg" alt="JEZFI Associates" width="190" height="50"></a>
+  <a class="brand" href="index.html" aria-label="JEZFI Associates home"><img src="assets/logo-lockup.png" alt="JEZFI Associates" width="150" height="60"></a>
   <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   <ul class="menu" id="menu">{links}<li><a class="btn btn-primary btn-sm" href="contact.html#intake" style="color:#fff">Book a consult</a></li></ul>
 </div></header>
@@ -95,7 +95,7 @@ FOOTER = '''</main>
 <footer class="site"><div class="container">
   <div class="f-grid">
     <div>
-      <img src="assets/logo-lockup.svg" alt="JEZFI Associates">
+      <img class="f-logo" src="assets/logo-lockup.png" alt="JEZFI Associates" width="150" height="60">
       <p>Accounting, tax and financial planning from Mississauga, serving clients across Canada since 1995.</p>
       <div class="soc">
         <a href="https://www.facebook.com/JEZFI" aria-label="JEZFI on Facebook" rel="noopener" target="_blank">{facebook}</a>
