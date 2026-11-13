@@ -92,7 +92,7 @@ footer.site .f-grid .f-logo{height:64px;width:auto;background:#fff;padding:8px 1
 /* stats parallax band */
 .band{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,#0a1f52,#12307f)}
 .panel>*,.contact-grid>*,.about>*,.hero-inner>*,.nominee-wrap>*{min-width:0}
-.band .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.png") center/520px repeat;opacity:.05;filter:invert(1);will-change:transform}
+.band .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.svg") center/520px repeat;opacity:.05;filter:invert(1);will-change:transform}
 .band .container{position:relative;z-index:2}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
 .stat b{display:block;font:800 clamp(2.4rem,5vw,4rem) var(--display);color:#fff;font-variant-numeric:tabular-nums} .stat span{color:#b7c5ee;font-size:.95rem}
@@ -102,7 +102,7 @@ footer.site .f-grid .f-logo{height:64px;width:auto;background:#fff;padding:8px 1
 .founder{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:28px;padding:34px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
 .founder .mono{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font:800 2rem var(--display);background:linear-gradient(135deg,var(--brass-2),var(--brass));color:#2a1d02;margin-bottom:18px}
 .founder h3{color:#fff;font-size:1.6rem;margin-bottom:2px} .founder p{color:#cdd8f6}
-.founder::after{content:"";position:absolute;inset:auto -60px -60px auto;width:240px;height:240px;background:url("../assets/logo-mark.png") center/contain no-repeat;opacity:.1;filter:invert(1)}
+.founder::after{content:"";position:absolute;inset:auto -60px -60px auto;width:240px;height:240px;background:url("../assets/logo-mark.svg") center/contain no-repeat;opacity:.1;filter:invert(1)}
 .checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px} .checks li{display:flex;gap:12px;align-items:flex-start} .checks svg{flex:none;margin-top:3px;color:var(--mint)}
 
 /* nominee */
@@ -219,7 +219,7 @@ footer.site h4{color:#fff;font-family:var(--sans);font-size:.82rem;letter-spacin
 
 /* page hero (inner pages) */
 .page-hero{background:linear-gradient(160deg,#06123a,#0a1f52 60%,#0b2a6b);color:#fff;padding:clamp(54px,7vw,96px) 0 clamp(60px,8vw,110px);position:relative;overflow:hidden}
-.page-hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.8rem)} .page-hero .lede{color:#cdd8f6} .page-hero .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.png") 90% 50%/520px no-repeat;opacity:.08;filter:invert(1);will-change:transform}
+.page-hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.8rem)} .page-hero .lede{color:#cdd8f6} .page-hero .layer{position:absolute;inset:-20% 0;background:url("../assets/logo-mark.svg") 90% 50%/520px no-repeat;opacity:.08;filter:invert(1);will-change:transform}
 .page-hero .container{position:relative}
 
 /* reveal */
